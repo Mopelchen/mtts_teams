@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class TeamController {
 
     @GetMapping("/{id}")
-    public Team getTeam(@PathVariable final String id) {
+    public Team getTeam(@PathVariable final Long id) {
         return Team.builder().withId(42L).withName("SuperTeam").build();
     }
 
